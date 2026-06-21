@@ -1,0 +1,43 @@
+# LangChain (LCEL + Runnables)
+langchain
+langchain-core
+langchain-community
+langchain-openai
+
+# Search
+tavily-python
+
+# Web Scraping
+beautifulsoup4
+requests
+lxml
+
+# Environment Variables
+python-dotenv
+
+# Async Support
+aiohttp
+
+# FastAPI Backend
+fastapi
+uvicorn
+python-multipart
+
+# Data Handling
+pydantic
+pandas
+
+# Tokenization
+tiktoken
+
+# Logging
+loguru
+rich
+
+# Retry Utilities
+tenacity
+
+# Optional Vector Database
+faiss-cpu
+chromadb
+
