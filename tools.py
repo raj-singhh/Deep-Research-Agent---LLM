@@ -36,7 +36,7 @@ def scrape_url(url: str) -> str:
         for tag in soup(['script', 'style',  'nav', 'footer']):
             tag.decompose()
     
-        return soup.get_text(separator=" ",strip=True)[:300]
+        return soup.get_text(separator=" ",strip=True)[:5000]
     except Exception as e:
         return f"Error scraping URL: {str(e)}"
 
