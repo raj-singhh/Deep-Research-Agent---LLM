@@ -21,7 +21,7 @@ def web_search(query: str) -> str:
 
     for r in results['results']:
         out.append(
-            f"Title: {r['title']}\nURL: {r['url']}\nSnippet: {r['content'][:5000]}\n"
+            f"Title: {r['title']}\nURL: {r['url']}\nSnippet: {r['content'][:300]}\n"
         )
     return "\n----\n".join(out)
 
@@ -36,7 +36,7 @@ def scrape_url(url: str) -> str:
         for tag in soup(['script', 'style',  'nav', 'footer']):
             tag.decompose()
     
-        return soup.get_text(separator=" ",strip=True)[:5000]
+        return soup.get_text(separator=" ",strip=True)[:300]
     except Exception as e:
         return f"Error scraping URL: {str(e)}"
 
